@@ -5,6 +5,12 @@
 			"style": {
 				"navigationBarTitleText": "拼多多小程序"
 			}
+		},
+		{
+			"path": "pages/chat/index",
+			"style": {
+				"navigationBarTitleText": "聊天"
+			}
 		}
 	],
 	"globalStyle": {
