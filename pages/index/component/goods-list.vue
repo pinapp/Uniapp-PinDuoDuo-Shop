@@ -9,19 +9,18 @@
 			padding-top: 24rpx;
 			justify-content: space-between;
 		}
-		
 		.item {
 			width: 50%;
 			margin-bottom: 24rpx;
 			box-sizing: border-box;
-			border-radius: 12rpx;
 			padding-right: 24rpx;
+			.content {
+				border-radius: 12rpx;
+				background-color: #fff;
+			}
 			image {
 				width: 100%;
 				height: 50vw;
-			}
-			.content {
-				background-color: #fff;
 			}
 			.row {
 				@include flex-center;
