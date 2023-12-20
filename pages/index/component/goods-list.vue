@@ -5,18 +5,23 @@
 			@include flex-center;
 			flex-wrap: wrap;
 			box-sizing: border-box;
-			padding: 24rpx;
+			padding-left: 24rpx;
+			padding-top: 24rpx;
 			justify-content: space-between;
 		}
+		
 		.item {
-			width: 45vw;
+			width: 50%;
 			margin-bottom: 24rpx;
-			background-color: #fff;
 			box-sizing: border-box;
 			border-radius: 12rpx;
+			padding-right: 24rpx;
 			image {
 				width: 100%;
 				height: 50vw;
+			}
+			.content {
+				background-color: #fff;
 			}
 			.row {
 				@include flex-center;
@@ -70,19 +75,21 @@
 <template>
 	<scroll-view class="list" scroll-y>
 		<view class="item" v-for="(item,index) in [1,2,3,4,5,6,7,8,9,10]">
-			<image src="@/static/logo.png"></image>
-			<view class="base">
-				<view class="title">少女法式小吊带</view>
-				<view class="row">
-					<view class="use">
-						<image src="@/static/logo.png"></image>
-						<view class="title">先用后付</view>
+			<view class="content">
+				<image src="@/static/logo.png"></image>
+				<view class="base">
+					<view class="title">少女法式小吊带</view>
+					<view class="row">
+						<view class="use">
+							<image src="@/static/logo.png"></image>
+							<view class="title">先用后付</view>
+						</view>
+						<view class="low">30天低价</view>
 					</view>
-					<view class="low">30天低价</view>
-				</view>
-				<view class="row sale-box">
-					<view class="price">￥10.49</view>
-					<view class="sale">已拼3100件</view>
+					<view class="row sale-box">
+						<view class="price">￥10.49</view>
+						<view class="sale">已拼3100件</view>
+					</view>
 				</view>
 			</view>
 		</view>
