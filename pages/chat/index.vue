@@ -8,6 +8,20 @@
 				.right {
 					overflow: hidden;
 				}
+				.red {
+					margin-left: 8rpx;
+					background-color: firebrick;
+					border-radius: 50rpx;
+					padding: 8rpx;
+					color: #fff;
+					height: 30rpx;
+					width: 30rpx;
+					@include flex-center-center;
+					font-size: 28rpx;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					text-wrap: nowrap;
+				}
 				&::after {
 					position: absolute;
 					bottom: 0;
@@ -36,7 +50,7 @@
 					@include flex-between;
 					align-items: center;
 					.title {
-						font-size: 36rpx;
+						font-size: 40rpx;
 						font-weight: bold;
 					}
 					.time {
@@ -49,6 +63,9 @@
 						text-overflow: ellipsis;
 						overflow: hidden;
 						text-wrap: nowrap;
+						color: darkgray;
+						font-size: 32rpx;
+						margin-top: 8rpx;
 					}
 				}
 			}
