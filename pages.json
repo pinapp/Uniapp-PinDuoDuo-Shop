@@ -11,6 +11,12 @@
 			"style": {
 				"navigationBarTitleText": "聊天"
 			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
 		}
 	],
 	"tabBar": {
@@ -28,6 +34,11 @@
 			"iconPath": "/static/logo.png",
 			"selectedIconPath": "/static/logo.png",
 			"text": "聊天"
+		}, {
+			"pagePath": "pages/my/index",
+			"iconPath": "/static/logo.png",
+			"selectedIconPath": "/static/logo.png",
+			"text": "个人中心"
 		}]
 	},
 	"globalStyle": {
